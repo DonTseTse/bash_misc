@@ -55,7 +55,7 @@ It doesn't produce errors and returns the expected status (continuation from abo
 With one restriction however: since it uses a check for the number of elements of an eventual array, it returns with status *1* if
 the array is declared but empty. 
 
-### "Does the array have an element at index *x*?" problem
+### "Does the array have an element at index *x* ?" problem
 The snippet
 ```bash
 numeric_array_var=("1st" "2nd")
@@ -96,5 +96,5 @@ Associative array element 'index': ${associative_array_var[index]} gives 'value'
 Associative array element 'undefined' (not defined): ${associative_array_var[undefined]} gives '' - ${associative_array_var[undefined]-foo} gives 'foo'
 Associative array element 0 (not defined): ${associative_array_var[0]} gives '' - ${associative_array_var[0]-foo} gives 'foo'
 ``` 
-Finally, a solution based on a `grep` over the expanded array indizes was implemented in bash commons' 
-[is_array_index](https://github.com/DonTseTse/bash_commons/blob/master/helpers.md#is_array_index) 
+Finally, a solution based on a `grep` over the expanded array indizes was implemented in [bash commons' 
+is_array_index()](https://github.com/DonTseTse/bash_commons/blob/master/helpers.md#is_array_index) 
