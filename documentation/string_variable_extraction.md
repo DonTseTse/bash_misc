@@ -24,9 +24,9 @@ Example: `${str:3:-3}` for `str='0123456789'`:
 - `len` is -3, ^ is the marker => "0123456^789"
 - the extracted string is 3456 
 
-As you can see in the examples column in the table, a space was inserted when `position` is negative. This is required to avoid a 
+The examples in the table below shows commands where a space was inserted when `position` is negative. This is required to avoid a 
 syntax collision with bash's "default value fallback" syntax `${var:-default}` (returns `default` if `$var` not set). When a variable is
-used, as shown in the examples below, the space is not required:
+used, it's not required:
 
 |     |                      Code                     |                     Result           
 |:---:| --------------------------------------------- | -------------------------------------
