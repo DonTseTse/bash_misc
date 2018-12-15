@@ -1,7 +1,7 @@
 #! /bin/bash
 
 var="global scope"
-echo "var=\"global scope\""
+echo "\$> var=\"global scope\""
 
 function fct()
 {
@@ -39,7 +39,7 @@ echo "\$var on global scope: $var"
 modify_var
 echo "\$var on global scope: $var"
 var="global scope"
-echo "var=\"global scope\""
+echo "\$> var=\"global scope\""
 echo "in \$() subshell: $(echo $var)"
 echo "$(var="modified in \$() subshell"; echo "in \$() subshell: \$> var=\"modified in \$() subshell\""; echo "\$var in \$() subshell: $var")"
 echo "\$var on global scope: $var"

@@ -56,15 +56,3 @@ Returns the piped `stdin` content on `stdout`, which allows to capture it into a
         <tr>    <td align="center"><code>stdout</code></td><td>copy of <code>stdin</code>'s piped input</td></tr>
         <tr><td><b>Status</b></td><td align="center"><em>0</em></td><td></td></tr>
 </table>
-
-### set_global_variable()
-Sets up a variable called `$1` with the value `$2`, on global level (i.e. accessible everywhere in the execution context)
-
-<table>
-        <tr><td rowspan="2"><b>Param.</b></td>
-                <td align="center"><code>$1</code></td><td width="90%">variable name - the usual bash variable name restrictions apply</td></tr>
-        <tr>    <td align="center"><code>$2</code></td><td>value</td></tr>
-        <tr><td rowspan="2"><b>Status</b></td>
-                <td align="center"><em>0</em></td><td>success</td></tr>
-        <tr>    <td align="center"><em>1</em></td><td><code>$1</code> is empty</td></tr>
-</table>
