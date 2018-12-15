@@ -2,13 +2,14 @@
 This repository groups all dev findings, snippets and tests related to the development of the [bash commons](https://github.com/DonTseTse/bash_commons).
 
 ## Reference documentation
-- [Bash string extraction pattern details](documentation/string_variable_extraction.md) `${<string variable name>:<offset>:<length>}`
-- [Problems with bash's associative arrays](documentation/array_existence_check_problem.md)
+- [Bash string extraction pattern details](documentation/string_variable_extraction.md) (pattern `${<string variable name>:<offset>:<length>}`)
+- [Problems with bash's associative arrays](documentation/array_problems.md)
+- [Variable scope clarifications](documentation/variable_scope.md)
 
 ## Dev notes
 - bash aliases are not adapted to create wrapper functions in libraries like the [bash commons](https://github.com/DonTseTse/bash_commons) because in 
   non-interactive mode their interpretation is usually disabled - aliases defined in the library might simply be ignored. It's safer to create "real" 
-  functions, as it was done with [bash common's move_file()] f.ex. 
+  functions, as it was done with [bash common's move_file()](https://github.com/DonTseTse/bash_commons/blob/master/filesystem.sh#L202) f.ex. 
  
 ## Snippets
 Get piped input:

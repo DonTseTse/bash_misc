@@ -3,7 +3,6 @@ Documentation for the functions in (snippet_functions.sh).
 - [get_piped_input()](#get_piped_input)
 - [is_command_defined()](#is_command_defined)
 - [is_function_defined()](#is_function_defined)
-- [set_global_variable()](#set_global_variable)
 
 ## Function documentation
 If the pipes are not documented, the default is:
