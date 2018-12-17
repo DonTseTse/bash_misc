@@ -7,7 +7,7 @@ Arrays or commands involving arrays have sometimes an unexpected behavior depend
 ### "Is variable defined?" problem
 The usual "does variable exist" syntax snippets don't work with associative arrays.
 
-Take the `[ -v <variable name> ]` pattern for example:
+Take the `[ -v <variable name> ]` pattern for example ([details](https://stackoverflow.com/questions/30749421/how-can-i-check-if-an-associative-array-element-exists-in-my-bash-script/30750380)):
 ```bash
 integer_var=2
 string_var="string"
@@ -38,7 +38,7 @@ It prints:
 
 Many examples given on the web don't work in this case:
 - the `[ -n <variable> ]` pattern, which gives the same result as `[ -v <variable name> ]` shown in the example above
-- the `${<variable name>:?<fallback>}` pattern which fails for arrays
+- the `${<variable name>:?<fallback>}` pattern ([details](https://bash.cyberciti.biz/guide/Bash_variable_existence_check))which fails for arrays
 
 One solution is the pattern 
 ```bash
