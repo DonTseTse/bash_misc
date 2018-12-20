@@ -21,11 +21,14 @@ Check if a command is defined:
 ```bash
 [ -n "$(type -t "$command_name")" ]
 ```
-It works for binaries, shell built-ins, (sourced) functions, etc. Unlike the one below, which works only for bash functions:
+It works for binaries, shell built-ins, (sourced) functions, etc. 
+
+The snippet checks for bash functions:
 ```bash
 [ "$(type -t "$function_name")" = "function" ]
 ```
-You can find these 3 snippets as functions in [snippet_functions.sh](snippet_functions.sh), with [documentation](snippet_functions.md).
+
+These 3 snippets are provided as functions in [snippet_functions.sh](snippet_functions.sh), with [documentation](snippet_functions.md).
 
 Simplified script directory resolution (f.ex. in an installer before `bash_commons` are available):
 ```bash

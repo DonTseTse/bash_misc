@@ -1,4 +1,4 @@
-# Bash substring
+# Bash substring syntax
 
 Bash supports a powerful substring syntax using variable expansion. With the right indizes it's possible to extract
 any part of a string. The syntax has 2 forms (example of a variable `$str`):

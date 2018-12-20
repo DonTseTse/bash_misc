@@ -1,3 +1,5 @@
+# Array problems
+
 Arrays or commands involving arrays have sometimes an unexpected behavior depending on the array type:
 - the usual "is variable defined?" check doesn't work for associative arrays
 - the attempt to load a non-numeric index in a numeric array raises no error and returns a value.  
